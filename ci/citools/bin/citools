@@ -1,0 +1,2 @@
+SCRIPTPATH="$( cd "$(dirname "$(realpath "$0")")" ; pwd -P )"
+"${SCRIPTPATH}/../gradlew" -q -Dorg.gradle.internal.launcher.welcomeMessageEnabled=false --build-file "${SCRIPTPATH}/../gpt.gradle" "$@" --stacktrace
